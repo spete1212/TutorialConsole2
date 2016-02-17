@@ -10,7 +10,7 @@ namespace TutorialConsole2
     {
         static void Main(string[] args)
         {
-            // String Tutorial
+            // String Tutorial  Make a change   
             //string myString = "Go to your c:\\ drive";
             //string myString = "My \"so called\" life";
             //string myString = "What if I need \n a new line?";
@@ -136,7 +136,7 @@ namespace TutorialConsole2
 
         public override string FormatMe()
         {
-            return String.Format("{0} - {1} - {2} - {3}",
+            return String.Format("{0} -- {1} -- {2} -- {3}",
                 this.Make,
                 this.Model,
                 this.Color,
