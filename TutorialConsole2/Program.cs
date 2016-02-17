@@ -163,7 +163,7 @@ namespace TutorialConsole2
 
         public override string FormatMe()
         {
-            return String.Format("{0} - {1} - {2} Towing units",
+            return String.Format("{0} -- {1} -- {2} Towing units",
                 this.Make,
                 this.Model,
                 this.TowingCapacity);
