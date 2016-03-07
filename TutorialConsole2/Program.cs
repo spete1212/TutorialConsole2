@@ -96,6 +96,35 @@ namespace TutorialConsole2
 
             printVehicleDetails(myTruck);
 
+            int i=0, j=0;
+            int num=0, digit = 0;
+            int ones = 0, tens = 0, hundreds = 0;
+
+            i = 0;
+            while (i < 125) // 825)
+            {
+                // the first iteration of this loop gets the ones digit, the
+                // second iteration the tens digit, the third the hundreds digit
+                j = 1;
+                num = i;
+                while (num > 0)
+                {
+                    digit = num % 10;  // num MOD 10
+                    num = num / 10;  // move the next digit to the ones place
+
+                    // Do processing here for this digit
+                    // Me - save numbers to print, you - call program
+                    if (j == 1) ones = digit;
+                    else if (j == 2) tens = digit;
+                    else hundreds = digit;
+                    j++;
+                }
+
+                Console.WriteLine(
+                    string.Format("{0}  H={1}  T={2}  O={3}", i, hundreds, tens, ones));
+                i++;
+            }
+
             Console.ReadLine();
         }
 
